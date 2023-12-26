@@ -9,7 +9,6 @@ const Register = () => {
     const [success, setSuccess] = useState('');
 
     const navigate = useNavigate();
- 
 
     const handleSignUp = event => {
         event.preventDefault();
