@@ -7,3 +7,8 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+.gradient {
+    background: linear-gradient(90deg, #ff0000, #0000ff); /* Replace these colors with your desired gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
