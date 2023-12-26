@@ -36,7 +36,7 @@ const Register = () => {
                 setSuccess("Successfully Login !")
                 form.reset()
                 logOut();
-                navigate('auth/login')
+                navigate('/auth/login')
 
             })
             .catch(error => setError(error))
