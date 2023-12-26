@@ -1,8 +1,11 @@
+import Banner from "../Banner/Banner";
+import Farm from "../Farm/Farm";
 
 const Home = () => {
     return (
         <div>
-            <h1 className="text-5xl font-bold my-20 text-blue-500 text-center">Agriculture</h1>
+            <Banner></Banner>
+            <Farm></Farm>
         </div>
     );
 };
