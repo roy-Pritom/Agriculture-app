@@ -116,7 +116,7 @@ const Login = () => {
             <div className="text-center mt-3">
               <p className="font-semibold">
                 Do not have an account? 
-                <Link to="auth/register" className="text-secondary">
+                <Link to="/auth/register" className="text-secondary">
                   Please Register
                 </Link>
               </p>
