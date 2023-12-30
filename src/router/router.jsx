@@ -11,6 +11,9 @@ import SubCategory from "../pages/Dashboard/SubCategory";
 import Products from "../pages/Dashboard/Products";
 import Sliders from "../pages/Dashboard/Sliders";
 import Dashboard from "../layout/DashBoard";
+import AllProducts from "../pages/Home/AllProducts/AllProducts";
+import Feedback from "../pages/Home/Feedback/Feedback";
+
 
 
   const router = createBrowserRouter([
@@ -21,6 +24,14 @@ import Dashboard from "../layout/DashBoard";
         {
             path:'/',
             element:<Home></Home>
+        },
+        {
+          path: 'feedback',
+          element: <Feedback></Feedback>
+        },
+        {
+          path: 'allproducts',
+          element: <AllProducts></AllProducts>
         }
       ]
     },
