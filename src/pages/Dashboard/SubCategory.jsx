@@ -19,7 +19,7 @@ const SubCategory = () => {
         const categoryName = form.category.value
         const subCategoryName = form.sub.value
         console.log(categoryName, subCategoryName);
-        const payload = { name: subCategoryName, category: categoryName }
+        const payload = {subCategoryName: subCategoryName, category: categoryName }
 
         fetch('http://localhost:5000/api/v1/create-SubCategory', {
             method: "POST",

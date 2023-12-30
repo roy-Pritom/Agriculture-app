@@ -11,6 +11,10 @@ import SubCategory from "../pages/Dashboard/SubCategory";
 import Products from "../pages/Dashboard/Products";
 import Sliders from "../pages/Dashboard/Sliders";
 import Dashboard from "../layout/DashBoard";
+import AllSubCategory from "../pages/Dashboard/AllSubCategory";
+import AllCategory from "../pages/Dashboard/AllCategory";
+import CreateProduct from "../pages/Dashboard/CreateProduct/CreateProduct";
+import ProductDetails from "../pages/ProductDetails/ProductDetails";
 
 
   const router = createBrowserRouter([
@@ -21,7 +25,12 @@ import Dashboard from "../layout/DashBoard";
         {
             path:'/',
             element:<Home></Home>
-        }
+        },
+        {
+            path:'/details/:id',
+            element:<ProductDetails></ProductDetails>,
+            loader:({params})=>fetch(`http://localhost:5000/api/v1/product/${params.id}`)
+        },
       ]
     },
      {
@@ -52,12 +61,29 @@ import Dashboard from "../layout/DashBoard";
             },
             {
                 path:'products',
-                element:<Products></Products>
+                element:<Products></Products>,
+                loader:()=>fetch('http://localhost:5000/api/v1/get-products')
             },
             {
                 path:'sliders',
                 element:<Sliders></Sliders>
             },
+            {
+                path:'allSub',
+                element:<AllSubCategory></AllSubCategory>,
+                loader:()=>fetch('http://localhost:5000/api/v1/get-SubCategory')
+            },
+            {
+                path:'allCategory',
+                element:<AllCategory></AllCategory>,
+                loader:()=>fetch('http://localhost:5000/api/v1/get-category')
+            },
+            {
+                path:'create-product',
+                element:<CreateProduct></CreateProduct>,
+                loader:()=>fetch('http://localhost:5000/api/v1/get-SubCategory')
+            },
+      
           ]
      }
   ]);

@@ -12,3 +12,20 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.gradient-text {
+    background: linear-gradient(45deg, 
+    #FF9A8C, 
+    #FF6A88, 
+    #FFC1A0, 
+    #FFD3A6, 
+    #A0E7E5, 
+    #B4F8C8, 
+    #85E3FF, 
+    #8ED2FC
+  ); /* Gradient background with multiple colors */
+  
+  -webkit-background-clip: text; /* Apply the gradient to the text */
+  -webkit-text-fill-color: transparent;
+  }
+  
