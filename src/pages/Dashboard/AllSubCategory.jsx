@@ -30,7 +30,7 @@ const AllSubCategory = () => {
                                 {i + 1}
                             </td>
                             <td>
-                                {item?.name}
+                                {item?.subCategoryName}
                             </td>
                             <td>
                                 {item?.category}

@@ -1,27 +1,3 @@
-// import  { useEffect, useRef } from 'react';
-// import 'quill/dist/quill.snow.css';
-// import Quill from 'quill';
-// const QuillEditor = ({ value, onChange }) => {
-//   const quillRef = useRef(null);
-
-//   useEffect(() => {
-//     const quill = new Quill(quillRef.current, {
-//       theme: 'snow'
-//     });
-
-//     quill.on('text-change', () => {
-//       onChange && onChange(quill.root.innerHTML);
-//     });
-
-//     if (value) {
-//       quill.root.innerHTML = value;
-//     }
-//   }, [value, onChange]);
-
-//   return <div ref={quillRef} />;
-// };
-
-// export default QuillEditor;
 
 
 

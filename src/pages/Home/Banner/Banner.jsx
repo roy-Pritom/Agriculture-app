@@ -21,10 +21,10 @@ const Banner = () => {
         />
         <div className="absolute h-full left-0 top-0 right-0  bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)] hover:bg-gradient-to-l ">
           <div className="text-white space-y-5 text-center mt-40">
-            <h2 className="text-6xl font-bold">
+            <h2 className="text-3xl lg:text-6xl font-bold">
               CULTIVATE GROWTH <br /> WITH QUALITY TOOLS
             </h2>
-            <p className="text-xl">
+            <p className="lg:text-xl">
               Enhance your farming experience with our premium agricultural
               tools and solutions!
             </p>
@@ -51,10 +51,10 @@ const Banner = () => {
         />
         <div className="absolute h-full left-0 top-0 right-0  bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)] hover:bg-gradient-to-l">
           <div className="text-white space-y-5 text-center mt-40">
-          <h2 className="text-6xl font-bold">
+          <h2 className="text-3xl lg:text-6xl font-bold">
               CULTIVATE GROWTH <br /> WITH QUALITY TOOLS
             </h2>
-            <p className="text-xl">
+            <p className="lg:text-xl">
               Enhance your farming experience with our premium agricultural
               tools and solutions!
             </p>
@@ -81,10 +81,10 @@ const Banner = () => {
         />
         <div className="absolute h-full left-0 top-0 right-0  bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)] hover:bg-gradient-to-l">
           <div className="text-white space-y-5 text-center mt-40">
-          <h2 className="text-6xl font-bold">
+          <h2 className="text-3xl lg:text-6xl font-bold">
               CULTIVATE GROWTH <br /> WITH QUALITY TOOLS
             </h2>
-            <p className="text-xl">
+            <p className="lg:text-xl">
               Enhance your farming experience with our premium agricultural
               tools and solutions!
             </p>
@@ -111,10 +111,10 @@ const Banner = () => {
         />
         <div className="absolute h-full left-0 top-0 right-0  bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)] hover:bg-gradient-to-l">
           <div className="text-white space-y-5 text-center mt-40">
-          <h2 className="text-6xl font-bold">
+          <h2 className="text-3xl lg:text-6xl font-bold">
               CULTIVATE GROWTH <br /> WITH QUALITY TOOLS
             </h2>
-            <p className="text-xl">
+            <p className="lg:text-xl">
               Enhance your farming experience with our premium agricultural
               tools and solutions!
             </p>

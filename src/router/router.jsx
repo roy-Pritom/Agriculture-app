@@ -15,6 +15,8 @@ import AllSubCategory from "../pages/Dashboard/AllSubCategory";
 import AllCategory from "../pages/Dashboard/AllCategory";
 import CreateProduct from "../pages/Dashboard/CreateProduct/CreateProduct";
 import ProductDetails from "../pages/ProductDetails/ProductDetails";
+import Product from "../pages/Home/Product/Product";
+import Feedback from "../pages/Home/Feedback/Feedback";
 
 
   const router = createBrowserRouter([
@@ -27,10 +29,18 @@ import ProductDetails from "../pages/ProductDetails/ProductDetails";
             element:<Home></Home>
         },
         {
-            path:'/details/:id',
-            element:<ProductDetails></ProductDetails>,
-            loader:({params})=>fetch(`http://localhost:5000/api/v1/product/${params.id}`)
+            path:'/products',
+            element:<Product></Product>
         },
+        {
+            path:'/feedback',
+            element:<Feedback></Feedback>
+        },
+        {
+          path:'/details/:id',
+          element:<ProductDetails></ProductDetails>,
+          loader:({params})=>fetch(`http://localhost:5000/api/v1/product/${params.id}`)
+        }
       ]
     },
      {
