@@ -16,8 +16,8 @@ const Header = () => {
         <Link>About Us</Link>{" "}
       </li>
       <li>
-        {" "}
-        <Link>Contact Us</Link>{" "}
+ 
+        <Link to="/contact-us">Contact Us</Link>
       </li>
       <li>
         {" "}

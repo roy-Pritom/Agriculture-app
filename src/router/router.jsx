@@ -10,9 +10,12 @@ import Category from "../pages/Dashboard/Category";
 import SubCategory from "../pages/Dashboard/SubCategory";
 import Products from "../pages/Dashboard/Products";
 import Sliders from "../pages/Dashboard/Sliders";
-import Dashboard from "../layout/DashBoard";
 import AllProducts from "../pages/Home/AllProducts/AllProducts";
 import Feedback from "../pages/Home/Feedback/Feedback";
+import GetFeedback from "../pages/Home/GetFeedback/GetFeedback";
+import ContactUs from "../pages/Home/ContactUs/ContactUs";
+import Contact from "../pages/Dashboard/Contact";
+import Dashboard from "../layout/Dashboard";
 
 
 
@@ -27,11 +30,20 @@ import Feedback from "../pages/Home/Feedback/Feedback";
         },
         {
           path: 'feedback',
-          element: <Feedback></Feedback>
+          element: <Feedback></Feedback>,
+        },
+        {
+          path: 'get-all-feedbacks',
+          element: <GetFeedback></GetFeedback>,
+          
         },
         {
           path: 'allproducts',
           element: <AllProducts></AllProducts>
+        },
+        {
+          path: 'contact-us',
+          element: <ContactUs></ContactUs>
         }
       ]
     },
@@ -69,6 +81,10 @@ import Feedback from "../pages/Home/Feedback/Feedback";
                 path:'sliders',
                 element:<Sliders></Sliders>
             },
+            {
+              path: 'contacts',
+              element: <Contact></Contact>
+            }
           ]
      }
   ]);
